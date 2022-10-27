@@ -1,0 +1,342 @@
+/*	Chris  Bunting
+	Web design project 6
+	Home/About/ gallery pages CSS
+	ITD 210
+	10/26/2022 */
+	
+	/*most of the code from this pages will be used in following pages so they will have the same look*/
+	/*I added padding around the body of the page to create a white border around the page*/
+	body {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 100%;
+		width: 100%;
+		padding: 25px;
+		}
+	
+	header{
+		background-color: #ffffff;
+		height: 30%;
+		width:100%;
+	}
+	
+	
+	div > h1 {
+		font-size: 4.0em;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	div > h2 {
+		font-size: 2.8em;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	div > h3 {
+		font-size: 2.2em;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	div > h4 {
+		font-size: 2.0em;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	p {
+		font-size: 2.0em;
+		font-family: Arial, Helvetica, sans-serif;
+		padding:20px;
+	}
+	
+	
+	/*Andie logo*/
+	.logo-head{
+		background-color: #80d8ff;
+		margin: 25px 0px 25px;
+	}	
+	
+	.logo {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width:390px; 
+		height:auto;
+		border-radius: 50%;
+	}
+	
+	.nav{
+		background-color: #ffff76;
+	}
+		
+	.carousel {
+		background-color: #ffffff;
+			}
+	.carousel-inner {
+		background-color: #CAF1FF;
+		
+	}
+	
+	/*extra CSS for navigation area of page*/
+	.container {
+		background-color: #ffff76;
+		color: #000000;
+		padding: 15px; 
+		font-size: 25px;
+		width: 100%;
+		
+	}
+	/*Contact us section and button code*/
+	
+	.Contus{
+		text-align:center;
+		width:100%;
+		padding: 20px;
+		color: black;
+		float: center;
+		background-color: #ffff76;
+		
+	}
+	.Cus-btn{
+		text-align: center;
+		padding: 10px;
+		font-size: 20px;
+		background-color: #000000;
+		border-radius: 12px;
+		
+		color: #ffffff;
+		text-decoration: none;
+		}
+	.Cus-btn:hover {
+		opacity: 0.6;
+		text-decoration: none;
+		}
+
+	
+		
+	/*Main section of the home page. contains welcome message*/
+	.words {
+		background-color: #80d8ff;
+		padding:20px;
+		color: #000000;
+		float: center;
+		text-align: center;
+		padding: 20px;
+		margin: 25px 0px 25px;
+		}
+	
+
+	/*Code for footer area of page*/
+	.col-md-6 {
+		vertical-align:center;
+	}
+	
+	.bot {  
+		vertical-align:center;
+		text-align: center;
+		margin: auto;
+		background-color: #ffff76;
+		padding: 20px;
+		display: inline-block;
+		width: 100%;	
+		bottom:0;
+		z-index: 1;
+		
+	}
+	
+	
+	.addr {
+		text-align: left;
+		background-color: #ffff76;
+		display: flex;
+		align-items: center;
+		vertical-align: center;
+		color: black;
+		float: left;
+		}	
+	
+	.social {
+		display:inline-block;
+		vertical-align: center;
+		padding:30px;
+		float: right;	
+		}
+	/* social media buttons*/
+	.fa {
+		padding: 10px;
+		font-size: 30px;
+		width: 50px;
+		color: white;
+		vertical-align:center;
+		text-align: center;
+		text-decoration: none;
+		align-items: center;
+		float: right;
+		margin: 7px;
+		}
+
+	.fa:hover {
+		opacity: 0.7;
+		text-decoration: none;
+		}
+
+	.fa-facebook {
+		background: #3B5998;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		}
+	.fa-instagram {
+		background: #cb2027;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		}
+	
+	/*Main section of the contact us form page. contains welcome message*/
+			
+	.center-block {
+		font-size:1.6em;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width:50%;
+		}
+
+		
+	/*Code for contact page return to home page button*/
+	.goBack-btn {
+		background-color: black;
+		color: white;
+		font-size:20px;
+		padding:15px;
+		border-radius: 12px;
+		text-align:center;
+		text-decoration: none;
+		width:100%;
+		}
+	.goBack-btn:hover {
+		opacity: 0.6;
+		text-decoration: none;
+		}
+	.goback-btn:visited {
+		background-color: black;
+		color: white;
+		font-size:20px;
+		padding:15px;
+		border-radius: 12px;
+		text-align:center;
+		text-decoration: none;
+		width:100%;
+		}
+	/* Changing Text for small and mobile screens*/
+	@media only screen and (max-width: 640px) {
+	
+       
+    div >h1 {
+      font-size: 3.0em;
+	}
+    div >h2 {
+      font-size: 2.3em;
+	}
+    div>h3 {
+      font-size: 2.0em;
+	}
+	div>h4 {
+      font-size: 1.2em;
+	}
+    p {
+      font-size: 1.6em;
+	}
+   .addr{
+	   padding: 0px;
+	}
+	
+	
+	 /* code to provide an additional decrease in the font size on the Menu page's "Chef's message" */
+   .row #chefmessage>h2 {
+	   font-size: 1.6em;
+	}
+		
+	}
+   /* Changing footer Text for Smaller screens*/
+	@media only screen and (max-width: 460px) {
+   
+   	.logo{
+		width:200px; 
+		height:auto;
+		)
+	
+	div>h4 {
+      font-size: 1.1em;
+	}
+	.social{
+		padding:5px;
+	}
+	}
+	
+	/* Code for the footer area on the smallest phones (Galaxy Fold, etc)*/
+	@media only screen and (max-width: 346px) {
+   
+   	.bot{
+		padding: 5px;
+	}
+   
+      	div>h4 {
+      font-size: 1.1em;
+	  padding: 2px;
+   }
+	
+	.social{
+		padding:7px;
+		
+	}
+		
+	/* decreased the size of the social media icons*/
+	.fa {
+		padding: 4px;
+		font-size: 20px;
+		width: 30px;
+		color: white;
+		vertical-align:center;
+		text-align: center;
+		text-decoration: none;
+		align-items: center;
+		float: right;
+		margin: 2px;
+	}
+		
+	}
+		
+	
+
+	
+/* CSS Code for Menu page*/
+	
+	.menumessage {
+		background-color: #D3D3D3;
+		display: flex;
+		color: #000000;
+		text-align: center;
+		width:100%;
+			}
+		
+	div#menuphoto {
+		background-color: #D3D3D3;
+		display:inline-block;
+		vertical-align: center;
+		padding:20px;
+		float: right;
+		
+	}
+	.menuphoto2 {
+		display:inline-block;
+		width: 65%;
+		}
+
+	div#chefmessage {
+		background-color: #D3D3D3;
+		display:inline-block;
+		padding:30px;
+		color: #000000;
+		text-align: center;
+		vertical-align: center;
+		font-style: italic;
+		}
+		
+	
+		
