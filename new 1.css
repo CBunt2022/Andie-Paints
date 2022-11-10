@@ -1,0 +1,132 @@
+/*CSS code for animating the logo*/
+
+body{
+	margin:0;
+	}
+
+.center 
+{
+	position:relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%);
+	width:400px;
+	height:400px;
+	box-sizing:border-box;
+	
+	justify-content: center;
+    align-items: center;
+}
+
+
+.circle3
+{	width:100%;
+	height: 100%;
+	border-radius:50%;
+	border-style: solid;
+	border-width: 13px;
+	border-color: #ffffff;
+	box-sizing:border-box;
+	}
+
+.circle1
+{	position:absolute;
+	top: 9px;
+	left: 9px;
+	width:95%;
+	height: 95%;
+	border-radius:50%;
+	border-style: solid;
+	border-width: 12px;
+	border-color: #80d8ff #ffff76 #80d8ff #ffff76;
+	box-sizing:border-box;
+	animation: animateCircle1 30s linear infinite;
+	
+}
+
+
+.circle2
+{	
+	position:absolute;
+	top: 23px;
+	left: 23px;
+	width: 88%;
+	height: 88%;
+	border-radius:50%;
+	background: url(Andie.jpg);
+	background-size: cover;
+}
+
+.center2 
+{
+	position:relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%);
+	width:120px;
+	height:120px;
+	box-sizing:border-box;
+	display:flex;
+	justify-content: center;
+    align-items: center;
+	align-items: center;
+}
+
+.circle1a
+{	position:absolute;
+	top: 7px;
+	left: 7px;
+	width:90%;
+	height: 90%;
+	border-radius:50%;
+	border-style: solid;
+	border-width: 12px;
+	border-color: #80d8ff #ffff76 #80d8ff #ffff76;
+	box-sizing:border-box;
+	animation: animateCircle1 30s linear infinite;
+		
+}
+.circle2b
+{	
+	position:absolute;
+	top: 12px;
+	left: 12px;
+	width: 80%;
+	height: 80%;
+	border-radius:50%;
+	background: url(Andie.jpg);
+	background-size: cover;
+}
+
+
+
+@keyframes animateCircle1
+{	
+0% {transform: rotate(0deg);
+}
+100%	
+{
+	transform: rotate(360deg);
+}}
+
+@media only screen and (max-width: 460px) {
+	
+.center 
+{
+	width:200px;
+	height:200px;
+}	
+.circle1
+{	
+	top: 5px;
+	left: 5px;
+	width:95%;
+	height: 95%;
+	
+}
+.circle2
+{	
+	position:absolute;
+	top: 12px;
+	left: 12px;
+}	}

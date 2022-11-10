@@ -18,7 +18,7 @@
 		height: 30%;
 		width:100%;
 	}
-	
+		
 	
 	div > h1 {
 		font-size: 4.0em;
@@ -49,7 +49,7 @@
 		background-color: #80d8ff;
 		margin: 25px 0px 25px;
 	}	
-	
+	/* This is old code for non animatd logo in case we decide to switch back
 	.logo {
 		display: block;
 		margin-left: auto;
@@ -57,7 +57,10 @@
 		width:390px; 
 		height:auto;
 		border-radius: 50%;
-	}
+		position:relative;
+		
+		} */
+
 	
 	.nav{
 		background-color: #ffff76;
@@ -65,11 +68,12 @@
 		
 	.carousel {
 		background-color: #ffffff;
-		height: 10%;
+		
 			}
 	.carousel-inner {
 		background-color: #CAF1FF;
-		
+		height: auto;
+		object-fit: scale-down;		
 	}
 	
 	/*extra CSS for navigation area of page*/
@@ -91,6 +95,7 @@
 		float: center;
 		background-color: #ffff76;
 		
+		
 	}
 	.Cus-btn{
 		text-align: center;
@@ -106,7 +111,6 @@
 		opacity: 0.6;
 		text-decoration: none;
 		}
-
 	
 		
 	/*Main section of the home page. contains welcome message*/
@@ -138,12 +142,12 @@
 		z-index: 1;
 		
 	}
-	
+	/*Address and social media div css*/
 	
 	.addr {
-		text-align: left;
+		text-align: center;
 		background-color: #ffff76;
-		display: flex;
+		display:inline-block;
 		align-items: center;
 		vertical-align: center;
 		color: black;
@@ -224,8 +228,61 @@
 		text-decoration: none;
 		width:100%;
 		}
+	/* CSS code for gallery sections*/
+	.container-fluid {
+		background-color: #80d8ff;
+		height:auto;
+		margin: 25px 0px 25px;
+	}
+	#andiephotos1 {
+		background-color: #80d8ff;
+		height:auto;
+		color: #000000;
+		float: center;
+		text-align: center;
+		padding: 20px;
+		margin: 25px 0px 25px;
+		}
+	
+	
+	.gallery1 {
+		background-color: white;
+		width:80%;
+		object-fit: contain;
+		padding: 20px;
+		margin:10px;
+		
+		
+		
+	
+	}
+	
+	
+	
+	
+	
+	/* Changing foot div layout for small and mobile screens*/
+	@media only screen and (max-width: 990px) {
+	.addr{
+		
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%);
+	   
+	}
+	.social {
+		
+		position: relative;
+		top: -50%;
+		right: 50%;
+		transform: translate(50%);
+		}
+	}
+	
+	
 	/* Changing Text for small and mobile screens*/
-	@media only screen and (max-width: 640px) {
+	@media only screen and (max-width: 770px) {
 	
        
     div >h1 {
@@ -243,16 +300,19 @@
     p {
       font-size: 1.6em;
 	}
-   .addr{
-	   padding: 0px;
+   	
+	.carousel-caption > h3 {
+	font-size: 1.2em
 	}
 	
-	
-	 /* code to provide an additional decrease in the font size on the Menu page's "Chef's message" */
-   .row #chefmessage>h2 {
-	   font-size: 1.6em;
-	}
+	.gallery1 {
+		background-color: white;
+		width:100%;
+		object-fit: contain;
+		padding: 20px;
+		margin:10px;
 		
+		 		
 	}
    /* Changing footer Text for Smaller screens*/
 	@media only screen and (max-width: 460px) {
@@ -260,14 +320,11 @@
    	.logo{
 		width:200px; 
 		height:auto;
-		)
+	}
 	
-	div>h4 {
+		div > h4 {
       font-size: 1.1em;
-	}
-	.social{
-		padding:5px;
-	}
+	} 
 	}
 	
 	/* Code for the footer area on the smallest phones (Galaxy Fold, etc)*/
@@ -282,10 +339,6 @@
 	  padding: 2px;
    }
 	
-	.social{
-		padding:7px;
-		
-	}
 		
 	/* decreased the size of the social media icons*/
 	.fa {
@@ -297,7 +350,7 @@
 		text-align: center;
 		text-decoration: none;
 		align-items: center;
-		float: right;
+		float: center;
 		margin: 2px;
 	}
 		
@@ -305,39 +358,7 @@
 		
 	
 
-	
-/* CSS Code for Menu page*/
-	
-	.menumessage {
-		background-color: #D3D3D3;
-		display: flex;
-		color: #000000;
-		text-align: center;
-		width:100%;
-			}
-		
-	div#menuphoto {
-		background-color: #D3D3D3;
-		display:inline-block;
-		vertical-align: center;
-		padding:20px;
-		float: right;
-		
-	}
-	.menuphoto2 {
-		display:inline-block;
-		width: 65%;
-		}
 
-	div#chefmessage {
-		background-color: #D3D3D3;
-		display:inline-block;
-		padding:30px;
-		color: #000000;
-		text-align: center;
-		vertical-align: center;
-		font-style: italic;
-		}
 		
 	
 		
