@@ -1,16 +1,20 @@
 /*	Chris  Bunting
-	Web design project 6
+	Web design project 
 	Home/About/ gallery pages CSS
 	ITD 210
-	10/26/2022 */
+	11/17/2022 */
 	
 	/*most of the code from this pages will be used in following pages so they will have the same look*/
 	/*I added padding around the body of the page to create a white border around the page*/
+	
+
 	body {
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 100%;
 		width: 100%;
 		padding: 25px;
+		background-color:#ffffff;
+		
 		}
 	
 	header{
@@ -47,6 +51,7 @@
 	/*Andie logo*/
 	.logo-head{
 		background-color: #80d8ff;
+		border-radius: 20px;
 		margin: 25px 0px 25px;
 	}	
 	/* This is old code for non animatd logo in case we decide to switch back
@@ -64,35 +69,54 @@
 	
 	.nav{
 		background-color: #ffff76;
+	/*this code is for navbar spacing*/
 	}
-		
+	body { 
+		padding-top: 120px;
+						
+	}
+	#pagename {
+		color: #000000;
+		font-size:25px;
+	}
+	
 	.carousel {
-		background-color: #ffffff;
-		
+		border-radius: 20px;
+		overflow: hidden;
 			}
 	.carousel-inner {
-		background-color: #CAF1FF;
 		height: auto;
-		object-fit: scale-down;		
+		object-fit: scale-down;
+		border-radius: 20px;
+		
+		
 	}
+	
+	#caroback {
+			border-radius: 20px;}
 	
 	/*extra CSS for navigation area of page*/
 	.container {
 		background-color: #ffff76;
 		color: #000000;
-		padding: 15px; 
+		padding: 20px; 
+		box-sizing: border-box;
 		font-size: 25px;
-		width: 100%;
-		
-	}
+		width: auto;
+		border-radius: 15px;
+		margin: 25px 25px 5px 25px;
+					}
+	
+	
 	/*Contact us section and button code*/
 	
-	.Contus{
+	.Contus {
 		text-align:center;
 		width:100%;
 		padding: 20px;
 		color: black;
 		float: center;
+		border-radius: 20px;
 		background-color: #ffff76;
 		
 		
@@ -120,6 +144,7 @@
 		color: #000000;
 		float: center;
 		text-align: center;
+		border-radius: 20px;
 		padding: 20px;
 		margin: 25px 0px 25px;
 		}
@@ -136,6 +161,7 @@
 		margin: auto;
 		background-color: #ffff76;
 		padding: 20px;
+		border-radius: 20px;
 		display: inline-block;
 		width: 100%;	
 		bottom:0;
@@ -232,7 +258,8 @@
 	.container-fluid {
 		background-color: #80d8ff;
 		height:auto;
-		margin: 25px 0px 25px;
+		margin: 25px 0px 25px 0px;
+		border-radius: 20px;
 	}
 	#andiephotos1 {
 		background-color: #80d8ff;
@@ -252,16 +279,9 @@
 		padding: 20px;
 		margin:10px;
 		
-		
-		
-	
 	}
 	
-	
-	
-	
-	
-	/* Changing foot div layout for small and mobile screens*/
+		/* Changing foot div layout for small and mobile screens*/
 	@media only screen and (max-width: 990px) {
 	.addr{
 		
@@ -317,6 +337,11 @@
    /* Changing footer Text for Smaller screens*/
 	@media only screen and (max-width: 460px) {
    
+	#pagename {
+	
+		font-size:20px;
+	}
+   
    	.logo{
 		width:200px; 
 		height:auto;
@@ -330,6 +355,21 @@
 	/* Code for the footer area on the smallest phones (Galaxy Fold, etc)*/
 	@media only screen and (max-width: 346px) {
    
+	body { 
+		padding-top: 90px;
+		
+				
+	}
+	
+	
+	#pagename {
+		font-size:15px;
+	}
+   
+	.container {
+		padding: 10px;
+	}
+		
    	.bot{
 		padding: 5px;
 	}
@@ -353,7 +393,33 @@
 		float: center;
 		margin: 2px;
 	}
+	.goBack-btn {
+		font-size:12px;
+		padding:15px;
+				}
+	
+	.goback-btn:visited {
 		
+		font-size:12px;
+		padding:15px;
+		
+		}
+
+	#andiephotos1 {
+		
+		padding: 3px;
+		
+		}
+	
+	.gallery1 {
+		
+		padding: 5px;
+		margin:5px;
+		
+		 		
+	}
+
+	
 	}
 		
 	
